@@ -1,0 +1,331 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<title> ENTERTAINMENT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+	p{
+	font-family: arial,tahoma;
+	text-align:align:justify;
+	text-transform:capitalize;
+}
+   
+{
+  margin:0;
+  padding: 0;
+  font-family: 'poppines', sans-serif;
+}  
+   
+
+	 
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.card
+{
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background: #122936;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card::before
+{
+  content:'';
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #2196f3;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before
+{
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after 
+{
+  content: 'link';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBx
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.card:imgBx img
+{
+  max-width: 100%;
+  transition: 0.5s;
+}
+
+.card:hover  .imgBx img
+{
+  max-width: 50%;
+}
+
+.card .contentBx
+{
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.card .contentBx h3
+{
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBx .link
+{
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.card .contentBx .click
+{
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  background: #2196f3;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.card:hover  .contentBx  .click
+{
+  top: 0;
+  opacity: 1;
+}  
+
+<!--second--> 	
+
+</style>		
+
+</head>
+<body>
+<!--navibar-->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-text-brown w3-padding-large"><b>HOME</b></a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT WEBSITE</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LINKS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">photos</a>
+        <a href="#" class="w3-bar-item w3-button">videos</a>
+        <a href="#" class="w3-bar-item w3-button">audios</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT WEBSITE</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LINKS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MORE</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!--entertainment image -->
+    <img src="mark.jpeg" width="1000px" height="190px">
+   
+ 
+ <!--title-->
+<h1><mark> ENTERTAINMENT </mark></h1> 
+
+<br>
+
+<p>Entertainment is a form of activity that holds the attention and  interest of an audience or gives pleasure and delight. It can be an idea or a task, but is more likely to be one of the activities or events that have developed over thousands of years specifically for the purpose of keeping an audience's attention. Although people's attention is held by different things, because individuals have different preferences in entertainment, most forms are recognisable and familiar. Storytelling, music, drama, dance, and different kinds of performance exist in all cultures, were supported in royal courts, developed into sophisticated forms and over time became available to all citizens. The process has been accelerated in modern times by an entertainment industry that records and sells entertainment products. Entertainment evolves and can be adapted to suit any scale, ranging from an individual who chooses a private entertainment from a now enormous array of pre-recorded products; to a banquet adapted for two; to any size or type of party, with appropriate music and dance; to performances intended for thousands; and even for a global audience.
+
+The experience of being entertained has come to be strongly associated with amusement, so that one common understanding of the idea is fun and laughter, although many entertainments have a serious purpose. This may be the case in the various forms of ceremony, celebration, religious festival, or satire for example. Hence, there is the possibility that what appears as entertainment may also be a means of achieving insight or intellectual growth.</p>
+<br>
+
+<center> <h3> <strong>Nowdays cinema plays major roll in cinema and I love cinema </strong> </h3> </center>   <br>
+
+<h1><mark> CINEMA </mark> </h1>
+<!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="en.png" style="width:50%">
+    <div class="w3-container w3-display-middlecenter w3-text-teal w3-padding-32 ">
+      <h1>CINEMA</h1>
+     <p>I</p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="em.png" style="width:50%">
+    <div class="w3-display-middlecenter w3-container w3-text-yellow w3-padding-32 ">
+      <h1>CINEMA</h1>
+      <p>LOVE</p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="eo.png" style="width:50%">
+    <div class="w3-display-middlecenter w3-container w3-text-orange w3-padding-32 ">
+      <h1>CINEMA</h1>
+      <p>CINEMA</p>    
+    </div>
+  </div>
+
+<div style="float: left;margin 0 10px 2px 0">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lwUoiSlsaco" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<p>CINEMA contains many types like direction,screenplay,dialog,etc..., and included with background music,comedy,songs,chasing,stunt sequences etc..,
+but CINEMA is mixed with emotions and feelings what screenplay and directors images is clearly understanded by audience. But In INDIA the film stars have big fans base
+they truely loved them and have affection love and all positive feelings compare to other country in INDIAN people are celebrating they are stars as GOD  The creation, performance, significance, and even the definition of music vary according to culture and social context. Indeed, throughout history, some new forms or styles of music have been criticized as "not being music", including Beethoven's Grosse Fuge string quartet in 1825,[3] early jazz in the beginning of the 1900s[4] and hardcore punk in the 1980s.[5] There are many types of music, including popular music, traditional music, art music, music written for religious ceremonies and work songs such as chanteys. Music ranges from strictly organized compositions—such as Classical music symphonies from the 1700s and 1800s—through to 
+spontaneously played improvisational music such as jazz, and avant-garde styles of chance-based contemporary music from the 20th and 21st centuries.</p> 
+
+<br>
+
+<h1><center>MOVIES</center></h1>
+<p>Film industry has various categories like thiller,comedy etc.., our tamil film industry also like that. Film, also called movie, motion picture or moving picture, is a visual art used to simulate experiences that communicate ideas, stories,
+ perceptions, feelings, beauty, or atmosphere through the use of moving images. These images are generally accompanied by sound, and more rarely, 
+ other sensory stimulations. The word "cinema", short for cinematography, is often used to refer to filmmaking and the film industry, and to the art 
+ form that is the result of it.</p>
+ <hr>
+ <marquee>TO WATCH MOVIE LEGAL SITES GIVEN BELOW (NO PIRACY)</marquee>
+ <hr>
+ <center>
+<a href="https://www.netflix.com/in/"> <img src="NET.png" width="100px"  height="90px"></a>
+<a href="https://www.primevideo.com/"> <img src="PRIME.png" width="100px"  height="90px"></a>
+ <a href="https://www.hotstar.com/in/"><img src="HOT.png" width="100px"  height="90px"></a>
+ <a href="https://www.youtube.com/"><img src="YOU.png" width="100px"  height="90px"></a>
+ </center>
+
+<h1><center>MUSIC</center></h1>
+<div style="float: left;margin 0 10px 2px 0">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZaoR3bu3GBA?start=47" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<p>Music is an art form, and a cultural activity, whose medium is sound.
+ General definitions of music include common elements such as pitch (which governs melody and harmony),
+ rhythm (and its associated concepts tempo, meter, and articulation), dynamics (loudness and softness), and the sonic
+ qualities of timbre and texture (which are sometimes termed the "color" of a musical sound). Different styles or types of music may
+ emphasize, de-emphasize or omit some of these elements. Music is performed with a vast range of instruments and vocal techniques ranging from singing
+ to rapping; there are solely instrumental pieces, solely vocal pieces (such as songs without instrumental accompaniment) and pieces that combine singing and 
+ instruments. The word derives from Greek μουσική (mousike; "art of the Muses"). See glossary of musical terminologyIn its most general form, the activities describing 
+ music as an art form or cultural activity include the creation of works of music (songs, tunes, symphonies, and so on), the criticism of music, the study of the history of 
+ music, and the aesthetic examination of music. Ancient Greek and Indian philosophers defined music in two parts: melodies,
+ as tones ordered horizontally, and harmonies as tones ordered vertically</p>
+ 
+ <br>
+<hr>
+<h1><center>LINK</center></h1>
+<P> you can list out the tamil movies from  staring to current movies list by yearly wise all movies are listed from 1930s to current movies only tamil movies list.dir,casting also listed</p>
+<br>
+<marquee>Thanks for wikiland.com</marquee>
+<!--link-->
+<center>
+<div class="card">
+<div class="imgBx">
+<img src="p.jpeg">
+</div>
+<div class="contentBx">
+<h3>YEARLY MOVIES LIST</h3>
+<h2 class="link"> wikiwand</h2>
+<a href='https://www.wikiwand.com/en/Lists_of_Tamil-language_films' class="click">CLICK</a>
+</div>
+</center>
+<br>
+<!-- End Page Content -->
+<center>
+<a href="https://twitter.com/eon__15?s=08"> <img src="twitter.png" width="100px"  height="50px"></a>
+<a href="https://instagram.com/eon15_r_a_m_?igshid=1p9nus5pzavdz"> <img src="b.jpg" width="100px"  height="50px"></a>
+<a href="https://www.facebook.com/ramalaxmanan.ramalaxmanan"> <img src="face.png" width="100px"  height="50px"></a>
+</center>
+<br>
+
+<center><i>CREATE BY RAMALAKSHMANAN ALIAS MANIKANDAN</i></center>
+ <script>
+// Automatic Slideshow - change image every 2 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script
+</body> 
+ </html>
